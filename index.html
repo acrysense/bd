@@ -43,7 +43,7 @@
 						</nav>
 					</div>
 					<div class="header__group">
-						<ul class="c-socials">
+						<ul class="c-socials header__socials">
 							<li class="c-socials__item">
 								<a href="#" class="c-socials__link">
 									<svg class="c-socials__icon">
@@ -74,6 +74,11 @@
                     </li>-->
 						</ul>
 						<a href="#" class="header__btn btn btn--accent">Купить</a>
+						<button class="hamburger" id="hamburger-toggle" aria-label="Меню">
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+							<span class="hamburger__inner"></span>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -132,33 +137,60 @@
 				<div class="about__wrap">
 					<h2 class="about__heading">Best Discount в цифрах и фактах</h2>
 					<div class="about__wrapper">
-						<div class="about__body">
-							<h3 class="about__title">Экосистема Best Discount — это готовый микромир, в который приходят надолго. Погружение в экосистему идет постоянно: чем больше участия, чем больше продажи - тем больше вовлеченность в процесс.</h3>
-							<ul class="c-list about__list">
-								<li class="c-list__item">Полностью лицензированная и защищенная патентами компания;</li>
-								<li class="c-list__item">3 года разработки и тестирования Digital Platform Best Discount;</li>
-								<li class="c-list__item">Более 5000 часов отладки процессов;</li>
-								<li class="c-list__item">Более 2700 изученных отзывов о недостатках других систем;</li>
-								<li class="c-list__item">40+ перекрестных маркетинговых инструментов для предпринимателя.</li>
-							</ul>
+						<h3 class="about__title">Экосистема Best Discount — это готовый микромир, в который приходят надолго. Погружение в экосистему идет постоянно: чем больше участия, чем больше продажи - тем больше вовлеченность в процесс.</h3>
+						<div class="systems about__systems">
+							<div class="systems__item systems__item--orange">
+								<div class="systems__circle"></div>
+								<p class="systems__description">40+ перекрестных маркетинговых инструментов для предпринимателя</p>
+							</div>
+							<div class="systems__group">
+								<div class="systems__item systems__item--pink">
+									<div class="systems__circle"></div>
+									<p class="systems__description">Более 5000 часов отладки процессов</p>
+								</div>
+								<div class="systems__item systems__item--green">
+									<div class="systems__circle"></div>
+									<p class="systems__description">Полностью лицензированная и защищенная патентами компания</p>
+								</div>
+								<div class="systems__item systems__item--blue">
+									<div class="systems__circle"></div>
+									<p class="systems__description">3 года разработки и тестирования Digital Platform Best Discount</p>
+								</div>
+								<div class="systems__item systems__item--purple">
+									<div class="systems__circle"></div>
+									<p class="systems__description">Более 2700 изученных отзывов о недостатках других систем;</p>
+								</div>
+							</div>
 						</div>
-						<picture class="about__img">
-							<img src="img/" alt="Image">
-						</picture>
 					</div>
 					<div class="about__wrapper about__wrapper--reverse">
-						<div class="about__body">
-							<h3 class="about__title">Мы создали IT-продукт будущего, который изменит общие стандарты сразу в нескольких глобальных направлениях:</h3>
-							<ul class="c-list about__list">
-								<li class="c-list__item">Программы лояльности;</li>
-								<li class="c-list__item">Кэшбэк-сервисы;</li>
-								<li class="c-list__item">Конвертация бонусов;</li>
-								<li class="c-list__item">Экосистемы для построения бизнеса.</li>
-							</ul>
+						<h3 class="about__title">Мы создали IT-продукт будущего, который изменит общие стандарты сразу в нескольких глобальных направлениях:</h3>
+						<div class="directions about__directions">
+							<div class="directions__item">
+								<picture class="directions__img">
+									<img src="img/directions-01.svg" alt="Программы лояльности">
+								</picture>
+								<h3 class="directions__title">Программы <br>лояльности</h3>
+							</div>
+							<div class="directions__item">
+								<picture class="directions__img">
+									<img src="img/directions-02.svg" alt="Кэшбэк сервисы">
+								</picture>
+								<h3 class="directions__title">Кэшбэк <br>сервисы</h3>
+							</div>
+							<div class="directions__item">
+								<picture class="directions__img">
+									<img src="img/directions-03.svg" alt="Конвертация бонусов">
+								</picture>
+								<h3 class="directions__title">Конвертация <br>бонусов</h3>
+							</div>
+							<div class="directions__item">
+								<picture class="directions__img">
+									<img src="img/directions-04.svg" alt="Экосистемы для построения бизнеса">
+								</picture>
+								<h3 class="directions__title">Экосистемы для <br>построения бизнеса</h3>
+							</div>
 						</div>
-						<picture class="about__img">
-							<img src="img/" alt="Image">
-						</picture>
 					</div>
 				</div>
 			</div>
@@ -302,12 +334,12 @@
 			<div class="container">
 				<h2 class="road-map__heading">Дорожная<span>карта</span></h2>
 				<div class="road-map__wrapper">
-					<article class="road-map__item road-map__item--active">
+					<article class="road-map__item">
 						<span class="road-map__status">Step_1</span>
 						<h3 class="road-map__title">Октябрь 2022 год</h3>
 						<p class="road-map__description">выпуск токена <b>BDSX</b>, внедрения элементов токенизации проекта <b>Best Discount</b>.</p>
 					</article>
-					<article class="road-map__item road-map__item--right road-map__item--active">
+					<article class="road-map__item">
 						<span class="road-map__status">Step_2</span>
 						<h3 class="road-map__title">Ноябрь 2022 года</h3>
 						<p class="road-map__description">листинг токена <b>BDSX</b> на DEX/СEX биржах.</p>
@@ -317,13 +349,13 @@
 						<h3 class="road-map__title">Февраль 2023 года</h3>
 						<p class="road-map__description">масштабирование системы Digital Platform Best Discount распространение 100 - 150 лицензий, подключение 300 - 350 тысяч пользователей, подключение 1000-150 магазинов к платформе. Популяризация Digital Platform Best Discount на рынке СНГ</p>
 					</article>
-					<article class="road-map__item road-map__item--right">
+					<article class="road-map__item">
 						<span class="road-map__status">Step_4</span>
 						<h3 class="road-map__title">Сентябрь 2023 года</h3>
 						<p class="road-map__description">масштабирование системы Digital Platform Best Discount распространение 250 - 300 лицензий, подключение 1,5-2 млн. пользователей, подключение 2500-3000 магазинов к платформе. Популяризация Digital Platform Best Discount на Европейском рынке.</p>
 					</article>
 					<article class="road-map__item">
-						<span class="road-map__status">Step_2</span>
+						<span class="road-map__status">Step_5</span>
 						<h3 class="road-map__title">Март 2024 года</h3>
 						<p class="road-map__description">масштабирование системы Digital Platform Best Discount распространение 500 - 600 лицензий, подключение 3-3,5 млн. пользователей, подключение 4500-5000 магазинов к платформе. Популяризация Digital Platform Best Discount на Азиатском рынке.</p>
 					</article>
@@ -336,7 +368,7 @@
 			<div class="container">
 				<div class="partners__top">
 					<h2 class="partners__heading">Наши партнеры</h2>
-					<span class="partners__value">+1000 партнеров</span>
+					<span class="partners__value partners__value--desktop">+1000 партнеров</span>
 				</div>
 				<div class="partners__wrapper">
 					<picture class="partners__item">
@@ -370,6 +402,7 @@
 						<img src="img/reg-ru.png" width="236px" height="74px" alt="reg.ru">
 					</picture>
 				</div>
+				<span class="partners__value partners__value--mobile">+1000 партнеров</span>
 			</div>
 		</section>
 		<!-- end of partners -->
@@ -421,7 +454,7 @@
 						</nav>
 					</div>
 					<div class="footer__group">
-						<ul class="c-socials">
+						<ul class="c-socials footer__socials">
 							<li class="c-socials__item">
 								<a href="#" class="c-socials__link">
 									<svg class="c-socials__icon">
